@@ -16,11 +16,13 @@ print(' ')
 
 yearly_invest = monthly_invest * 12
 final_amount = 0
+the_year = 0
 
 for i in range(0, years):
   if final_amount == 0:
     final_amount = principal
 
   final_amount = (final_amount + yearly_invest) * (1 + interest)
+  the_year += 1
 
-  print('After {} years, you will have: '.format(years) + str(final_amount))
+  print('After {} years, you will have: '.format(the_year) + str(final_amount))
